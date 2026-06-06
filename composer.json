@@ -1,0 +1,27 @@
+{
+  "name": "panda/wp-pokerwars",
+  "type": "wordpress-plugin",
+  "autoload": {
+    "psr-4": {
+      "Panda\\PokerWars\\": "includes/"
+    }
+  },
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "^11.0",
+    "phpstan/phpstan": "^2.0",
+    "brain/monkey": "^2.6",
+    "mockery/mockery": "^1.6",
+    "squizlabs/php_codesniffer": "^3.13",
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.1",
+    "wp-coding-standards/wpcs": "^3.2"
+  },
+   "scripts": {
+    "test": "phpunit",
+    "analyse": "phpstan analyse",
+    "ci": [
+      "@analyse",
+      "@test"
+    ]
+  }
+}
