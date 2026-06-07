@@ -1,0 +1,33 @@
+deptrac:
+  layers:
+    - name: Admin
+      collectors:
+        - type: directory
+          value: includes/Admin
+
+    - name: Services
+      collectors:
+        - type: directory
+          value: includes/Services
+
+    - name: Repositories
+      collectors:
+        - type: directory
+          value: includes/Database/Repositories
+
+    - name: Security
+      collectors:
+        - type: directory
+          value: includes/Security
+
+  ruleset:
+    Admin:
+      - Services
+
+    Services:
+      - Repositories
+      - Security
+
+    Repositories: ~
+
+    Security: ~
