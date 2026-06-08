@@ -40,4 +40,7 @@ final class AuditEvents
     public const USER_REWARD_AWARDED = 'USER_REWARD_AWARDED';
     public const USER_REWARD_CLAIMED = 'USER_REWARD_CLAIMED';
     public const USER_REWARD_REVOKED = 'USER_REWARD_REVOKED';
+    
+    public const POINTS_AWARDED = 'POINTS_AWARDED';
+    public const POINTS_SPENT = 'POINTS_SPENT';
 }
